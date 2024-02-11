@@ -40,6 +40,12 @@ public class RoleController {
         return new ResponseEntity<List<Role>>(roleList, HttpStatus.OK);
     }
 
+    @PutMapping(produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Role> updateRole(@RequestBody Role role) {
+        Role roleUpdate = roleService.updateRole(role);
+        return new ResponseEntity<Role>(roleUpdate, HttpStatus.ACCEPTED);
+    }
+
     @DeleteMapping(path = "/{id}")
     public ResponseEntity<Object> deleteRole(@PathVariable String id) {
         roleService.deleteRole(id);
