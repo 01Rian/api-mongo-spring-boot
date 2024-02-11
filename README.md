@@ -18,9 +18,9 @@ This project is an API built with Spring Boot and MongoDB to manage users and ro
     - `name`: Role name.
 
 ## Prerequisites
+- Gradle 8+: [Gradle Installation Guide](https://gradle.org/install/)
 - Docker installed: [Docker Installation Guide](https://docs.docker.com/get-docker/)
 - Docker Compose installed: [Docker Compose Installation Guide](https://docs.docker.com/compose/install/)
-- Gradle 8+
 
 ## How to Run the Application
 
