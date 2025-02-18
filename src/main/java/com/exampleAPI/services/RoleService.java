@@ -2,7 +2,6 @@ package com.exampleAPI.services;
 
 import com.exampleAPI.entities.Role;
 import com.exampleAPI.repositories.RoleRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,7 +10,6 @@ import java.util.List;
 public class RoleService {
     private final RoleRepository roleRepository;
 
-    @Autowired
     public RoleService(RoleRepository roleRepository) {
         this.roleRepository = roleRepository;
     }
