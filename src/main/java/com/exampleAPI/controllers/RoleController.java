@@ -2,7 +2,6 @@ package com.exampleAPI.controllers;
 
 import com.exampleAPI.entities.Role;
 import com.exampleAPI.services.RoleService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +16,6 @@ public class RoleController {
 
     private final RoleService roleService;
 
-    @Autowired
     public RoleController(RoleService roleService) {
         this.roleService = roleService;
     }
